@@ -20,4 +20,10 @@ build
 # other
 eclipse
 run
-/lib/
+libs
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# Key source
+src/main/resources/assets/mapwriter/textures/map/border_round.psd

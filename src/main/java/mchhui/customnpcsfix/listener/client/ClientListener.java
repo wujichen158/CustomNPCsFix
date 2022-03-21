@@ -58,7 +58,7 @@ import noppes.npcs.client.gui.script.GuiScriptInterface;
 import noppes.npcs.client.gui.util.GuiNpcButton;
 import noppes.npcs.client.gui.util.GuiNpcLabel;
 import noppes.npcs.constants.EnumPacketServer;
-import xaero.common.api.spigot.ServerWaypoint;
+//import xaero.common.api.spigot.ServerWaypoint;
 import xaero.common.gui.GuiWaypoints;
 import xaero.common.minimap.waypoints.Waypoint;
 import xaero.common.minimap.waypoints.WaypointWorldContainer;

@@ -79,7 +79,7 @@ public class QuestHelper {
             if (!WaypointsGuiRendererTranformer.isSuccessful || !WaypointsIngameRendererTranformer.isSuccessful) {
                 return;
             }
-            WaypointsManager manager = XaeroMinimap.instance.getWaypointsManager();
+            WaypointsManager manager = XaeroMinimap.instance.createSession().getWaypointsManager();
             WaypointWorldContainer container = manager.getWorldContainer(manager.getAutoContainerID().split("/")[0]);
             container = container.addSubContainer("dim%" + point.worldDIM);
             WaypointSet set = container.getFirstWorld().getSets().get(point.setName);
@@ -110,7 +110,7 @@ public class QuestHelper {
             if (waypoint == null) {
                 return;
             }
-            WaypointsManager manager = XaeroMinimap.instance.getWaypointsManager();
+            WaypointsManager manager = XaeroMinimap.instance.createSession().getWaypointsManager();
             WaypointWorldContainer container = manager.getWorldContainer(manager.getAutoContainerID().split("/")[0]);
             container = container.addSubContainer(new StringBuilder().append("dim%").append(point.worldDIM).toString());
             WaypointSet set = container.getFirstWorld().getSets().get(point.setName);
